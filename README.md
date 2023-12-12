@@ -1,64 +1,60 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# DevJobs
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+DevJobs es una plataforma desarrollada en Laravel que permite a las empresas registradas publicar vacantes y a los usuarios postularse a ellas, subir sus currículos y recibir notificaciones cuando un candidato se postula para una vacante.
 
-## About Laravel
+## Características Principales
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Publicación de Vacantes:** Las empresas pueden registrarse y publicar nuevas vacantes, proporcionando detalles sobre el puesto y los requisitos.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Postulación de Usuarios:** Los usuarios pueden explorar las vacantes y postularse a aquellas que coincidan con sus habilidades y experiencia.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Subida de Currículos:** Los usuarios tienen la opción de subir sus currículos para facilitar el proceso de aplicación.
 
-## Learning Laravel
+- **Notificaciones:** Las empresas reciben notificaciones cuando un candidato se postula para una de sus vacantes, mejorando la eficiencia en el proceso de contratación.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tecnologías Utilizadas
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Laravel:** El backend del proyecto se desarrolla utilizando el framework Laravel, que proporciona una estructura sólida y potente para aplicaciones web.
 
-## Laravel Sponsors
+- **Tailwind CSS:** Para el diseño y estilos, se utiliza Tailwind CSS, permitiendo un enfoque ágil y fácil personalización.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Livewire:** La interactividad del frontend se logra con Livewire, una biblioteca de Laravel que simplifica la creación de componentes dinámicos.
 
-### Premium Partners
+## Instalación
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1. **Clonar el Repositorio:**
+   ```bash
+   git clone https://github.com/tuusuario/DevJobs.git
+```
+2. **Instalar Dependencias:**
+    
+```sh
+cd DevJobs composer install npm install
+```
+    
+3. **Configuración del Entorno:**
+    
+    - Copiar el archivo `.env.example` a `.env` y configurar la conexión a la base de datos y otras variables de entorno.
+    - Generar una nueva clave de aplicación: `php artisan key:generate`
+4. **Migraciones y Datos Iniciales:**    
+```sh
+php artisan migrate --seed
+```
+    
+    
+    
+5. **Compilar Assets:**    
+```sh 
+npm run dev
+```
+    
+6. **Iniciar el Servidor:**
+    
+    `php artisan serve`
+    
 
-## Contributing
+Accede a tu aplicación en [http://localhost:8000](http://localhost:8000/).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Contribuciones
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+¡Contribuciones son bienvenidas! Si encuentras errores o mejoras posibles, siéntete libre de abrir un problema o enviar un pull request.
