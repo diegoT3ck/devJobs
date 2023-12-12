@@ -24,7 +24,7 @@ DevJobs es una plataforma desarrollada en Laravel que permite a las empresas reg
 
 1. **Clonar el Repositorio:**
    ```bash
-   git clone https://github.com/tuusuario/DevJobs.git
+   git clone https://github.com/diegoT3ck/devJobs.git
 ```
 2. **Instalar Dependencias:**
     
